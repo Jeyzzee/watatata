@@ -1,0 +1,93 @@
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<div class="w3-center">
+    <img src="glitch.jpg" width="100%" height="25%">
+</div>
+<body background="34378.gif">
+
+<!--  =======Awal Menu=======  -->
+    <div class="w3-bar w3-blue-grey">
+ <button class="w3-bar-item w3-button" onclick="openBlog('Home')">Home</button>
+ <button class="w3-bar-item w3-button" onclick="openBlog('Gi')">Ghensin Impact</button>
+ <button class="w3-bar-item w3-button" onclick="openBlog('Pb')">Point Blank</button>
+ <button class="w3-bar-item w3-button" onclick="openBlog('Pubg')">Pubg</button>
+ <button class="w3-bar-item w3-button" onclick="openBlog('Ml')">Mobile Legend</button>
+ <button class="w3-bar-item w3-button" onclick="openBlog('Fortnite')">Fortnite</button>
+    
+ <div class="w3-dropdown-hover">
+<button class="w3-button">About Me</button>
+    <div class="w3-dropdown-content w3-bar-block w3-card-4">
+<button class="w3-bar-item w3-button" onclick="openBlog('profile')">Profile</button>
+    </div>
+</div>
+    </div>
+    <div id="Home" class="w3-container Blog" style="display:block">
+        <center>
+    <font color="white"><h2>Welcome</h2>
+        </center>
+        <hr>
+        <h3>Di kesempatan kali ini saya akan menampilkan
+            beberapa Game yang saya suka walaupun ada yang belum pernah dimainkan.</h3>
+</div>
+<div id="Gi" class="w3-container Blog w3-animate-top" style="display:none">
+    <font color=""><h2>Genshin Impact</h2></font>
+    <img src="Gi.jpg" align="right" width="50%">
+    <h3>Yang pertama ada Genshin Impact. Genshin Impact adalah Game role-playing
+        yang dikembangkan dan diterbitkan oleh miHoYo. Game ini dirilis untuk Android,
+        iOS, PlayStation 4, dan Windows pada tahun 2020, di PlayStation 5 pada 
+        tahun 2021, dan akan hadir di Nintendo Switch. Game ini bertemakan 
+        open-world dengan style anime dan sistem pertarungan berbasis 
+        aksi menggunakan unsur sihir dan pergantian karakter. Game ini gratis 
+        untuk dimainkan dengan mekanisme gacha yang membuat pemain
+        dapat memperoleh karakter dan senjata baru.</h3>
+</div>
+<div id="Pb" class="w3-container Blog w3-animate-Bottom" style="display:none">
+    <img src="pb.jpg" align="right" width="50%">
+</div>
+<div id="Pubg" class="w3-container Blog w3-animate-Left" style="display:none">
+    <font color="white"><h2>PUBG</h2>
+        <hr>
+    <img src="pubg.png" align="right" width="50%">
+    </center>
+</div>
+<div id="Ml" class="w3-container Blog w3-animate-Right" style="display:none">
+    <img src="ml.jpg" align="right" width="50%">
+    </center>
+</div>
+<div id="Fortnite" class="w3-container Blog w3-animate-Opacity" style="display:none">
+    <center>
+    <img src="fortnite.jpg" align="right" width="50%">
+    </center>
+</div>
+<div id="profile" class="w3-container blog w3-zoom" style="display:none">
+    <center>
+    <div class="w3-card">
+    <h2><b>PROFILE CREATOR </b></h2> 
+<div class="w3-pannel w3-red">
+      <h3>
+      <p>NAMA  : M. Fajar Fadhila F </p>
+      <p>NIM   : 10122107</p>
+      <p>KELAS : IF-3</p>
+      </h3>
+  </center>
+</div>
+</div>
+<script>
+function openBlog(namaBlog) {
+ var i;
+ var x = document.getElementsByClassName("Blog");
+ for (i = 0; i < x.length; i++) {
+ x[i].style.display = "none"; 
+ }
+ document.getElementById(namaBlog).style.display = "block"; 
+}
+</script>
+<!-- <audio controls autoplay id="bgsound" src="3.mp3" type="audio/mp3"> -->
+<!-- </audio> -->
+<audio hidden controls autoplay>
+    <source src="a.mp3" type="audio/mp3">
+</audio>
+
+</body>
+</html>
